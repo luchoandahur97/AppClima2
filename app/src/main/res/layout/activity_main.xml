@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:layout_weight="65"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:gravity="center|top"
+                    android:text="Chillán, Chile."
+                    android:textAlignment="center"
+                    android:textColor="#BDBDBD"
+                    android:textSize="30dp"
+                    android:textStyle="normal|italic" />
+                <TextView
+                    android:id="@+id/mainfecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    android:text="fecha"
+                    android:textColor="#BDBDBD"
+                    android:textSize="20sp"
+                    android:textStyle="normal|italic"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_weight="30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|top"
+                    android:textSize="20dp"
+                    android:text="Temperatura actual"
+                    android:drawableTop="@drawable/ic_nublado"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_weight="40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/maintemp"
+
+                    android:layout_weight="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="70dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_weight="20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_weight="50"
+                    android:id="@+id/temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/AliceBlue"
+                    android:gravity="center"
+                    android:text="Ver más"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_weight="35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:layout_weight="50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:layout_weight="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/ic_humedad"
+                        android:gravity="center|top"
+                        android:textSize="15sp"
+                        android:text="Humedad"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="100"
+                    android:layout_weight="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/mainhumedad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="30sp"
+
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="100"
+                    android:layout_weight="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/hum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:text="Ver más"
+                        android:textSize="15sp"
+                        android:background="@color/AliceBlue"
+                        android:gravity="center"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:layout_weight="50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:weightSum="100"
+                    android:layout_weight="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/ic_uv"
+                        android:gravity="center|top"
+                        android:textSize="15sp"
+                        android:text="Radiación"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="100"
+                    android:layout_weight="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/mainradiacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="30sp"
+
+                        android:textStyle="normal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="100"
+                    android:layout_weight="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/rad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Ver más"
+                        android:textSize="15sp"
+                        android:background="@color/AliceBlue"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

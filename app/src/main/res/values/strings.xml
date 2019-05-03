@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ClimApp</string>
+    <string name="ventana_temp">Temperatura</string>
+    <string name="ventana_hum">Humedad</string>
+    <string name="ventana_rad">Radiación</string>
+    <string name="titulo">Advertencia</string>
+    <string name="mensaje">¿Está seguro que desea cerrar la aplicación?</string>
+    <string name="si">si</string>
+    <string name="no">no</string>
+</resources>

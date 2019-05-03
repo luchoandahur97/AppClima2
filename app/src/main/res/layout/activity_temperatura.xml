@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Humedad">
+
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_weight="49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top|center"
+            android:text="Temperatura Actual"
+            android:textSize="30sp"
+            android:textColor="#BDBDBD"
+            android:textStyle="normal|italic"/>
+
+        <com.github.anastr.speedviewlib.SpeedView
+            android:id="@+id/gaugeTemp"
+            android:layout_width="180sp"
+            android:layout_height="180sp"
+            android:layout_weight="70"
+            android:layout_gravity="center"
+            app:sv_withTremble="false"
+            app:sv_lowSpeedPercent="30"
+            app:sv_mediumSpeedPercent="70"
+            app:sv_lowSpeedColor="@color/Yellow"
+            app:sv_mediumSpeedColor="@color/DarkOrange"
+            app:sv_highSpeedColor="@color/DarkRed"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="49"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top|center"
+            android:text="Temperatura Promedio"
+            android:textSize="30sp"
+            android:textColor="#BDBDBD"
+            android:textStyle="normal|italic"/>
+
+        <com.github.anastr.speedviewlib.SpeedView
+            android:id="@+id/gaugeTempProm"
+            android:layout_width="180sp"
+            android:layout_height="180sp"
+            android:layout_weight="70"
+            android:layout_gravity="center"
+            app:sv_withTremble="false"
+            app:sv_lowSpeedPercent="30"
+            app:sv_mediumSpeedPercent="70"
+            app:sv_lowSpeedColor="@color/Yellow"
+            app:sv_mediumSpeedColor="@color/DarkOrange"
+            app:sv_highSpeedColor="@color/DarkRed"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/AliceBlue"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_weight="40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/hum"
+                android:drawableBottom="@drawable/ic_humedad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/AliceBlue"
+                android:gravity="center"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/actualizar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:drawableBottom="@drawable/ic_update"
+                android:textSize="15sp"
+                android:background="@color/AliceBlue"
+                android:gravity="center"
+                android:textStyle="normal"/>
+            <Button
+                android:id="@+id/volver"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:drawableBottom="@drawable/ic_return"
+                android:textSize="15sp"
+                android:background="@color/AliceBlue"
+                android:gravity="center"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_weight="40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/rad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/ic_uv"
+                android:background="@color/AliceBlue"
+                android:gravity="center"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+<!--
+<TextView
+            android:layout_weight="0"
+            android:id="@+id/actualTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top|center"
+            android:textSize="70sp"
+            android:textStyle="normal"/>
+
+<TextView
+            android:layout_weight="0"
+            android:id="@+id/promTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top|center"
+            android:textSize="70sp"
+            android:textStyle="bold|italic"
+            />
+-->
